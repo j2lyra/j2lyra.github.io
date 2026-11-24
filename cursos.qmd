@@ -1,0 +1,31 @@
+
+---
+title: "Cursos"
+toc: false
+---
+
+En esta sección comparto materiales educativos, notas de clase, ejercicios y recursos para el aprendizaje de las matemáticas. Los cursos combinan el desarrollo de la comprensión conceptual, el lenguaje matemático formal y la resolución de problemas.
+
+---
+
+## Precálculo
+
+Estudio de funciones, polinomios, gráficas y herramientas algebraicas que fundamentan el cálculo. Se busca desarrollar una comprensión de las relaciones entre distintas representaciones matemáticas y su aplicación a la resolución de problemas.
+
+[Ver curso de Precálculo →](cursos/precalculo.qmd)
+
+---
+
+## Álgebra Lineal
+
+Introducción formal, intuitiva y aplicada al álgebra lineal, tomando como referencia el texto de Hoffman y Kunze. El curso enfatiza la comprensión del lenguaje matemático, la interpretación geométrica de los conceptos y sus aplicaciones en robótica, desarrollo de software y animación. Las demostraciones se ofrecen como material de profundización.
+
+[Ver curso de Álgebra Lineal](cursos/algebra-lineal/index.qmd)
+
+---
+
+## Estadística Inferencial
+
+Introducción al razonamiento estadístico, la probabilidad, la estimación de parámetros y las pruebas de hipótesis. Se busca desarrollar la capacidad de analizar datos, interpretar resultados y aplicar herramientas estadísticas en diferentes contextos.
+
+[Ver curso de Estadística Inferencial →](cursos/estadistica-inferencial.qmd)

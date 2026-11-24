@@ -1,0 +1,604 @@
+---
+title: "1.1 Conjuntos, relaciones, funciones y notación"
+sidebar: algebra
+toc: true
+toc-depth: 3
+---
+
+# Introducción
+
+Las matemáticas no consisten únicamente en realizar cálculos. También constituyen un lenguaje que permite describir objetos abstractos, establecer relaciones entre ellos y formular afirmaciones precisas.
+
+En álgebra lineal encontraremos expresiones como
+
+$$
+T:V\longrightarrow W
+$$
+
+o
+
+$$
+\forall u,v\in V,\quad
+T(u+v)=T(u)+T(v).
+$$
+
+Aunque inicialmente puedan parecer complicadas, estas expresiones comunican ideas que pueden explicarse con palabras.
+
+Nuestro primer objetivo será aprender a interpretar este lenguaje, comprender los objetos que representa y utilizarlo para describir situaciones matemáticas y computacionales.
+
+::: {.callout-tip}
+## Idea central
+
+El formalismo matemático no sustituye la intuición: permite expresar nuestras intuiciones de manera precisa, evitando ambigüedades.
+
+Una parte fundamental de aprender matemáticas consiste en poder pasar de una explicación intuitiva a una formulación rigurosa y viceversa.
+:::
+
+# 1. Conjuntos
+
+## 1.1 Intuición
+
+Un conjunto es una colección bien definida de objetos, llamados **elementos**.
+
+Por ejemplo, podemos considerar el conjunto de los ejes de un robot:
+
+$$
+E=\{x,y,z\}.
+$$
+
+También podemos considerar el conjunto de números naturales entre uno y cinco:
+
+$$
+A=\{1,2,3,4,5\}.
+$$
+
+Lo importante es que podamos determinar si un objeto pertenece o no al conjunto.
+
+## 1.2 Definición y notación
+
+Dos símbolos fundamentales son:
+
+- $a\in A$: el elemento $a$ pertenece al conjunto $A$.
+- $a\notin A$: el elemento $a$ no pertenece al conjunto $A$.
+
+Por ejemplo, si
+
+$$
+A=\{2,4,6,8\},
+$$
+
+entonces
+
+$$
+4\in A,\qquad 5\notin A.
+$$
+
+En un conjunto, el orden y las repeticiones no modifican sus elementos:
+
+$$
+\{1,2,3\}=\{3,2,1,1\}.
+$$
+
+## 1.3 Conjuntos numéricos
+
+Utilizaremos frecuentemente los siguientes conjuntos:
+
+| Símbolo | Conjunto | Ejemplos |
+|---|---|---|
+| $\mathbb N$ | Naturales | $0,1,2,3,\ldots$ |
+| $\mathbb Z$ | Enteros | $-2,-1,0,1,2$ |
+| $\mathbb Q$ | Racionales | $\frac12,-\frac34$ |
+| $\mathbb R$ | Reales | $\sqrt2,\pi,-5$ |
+| $\mathbb C$ | Complejos | $2+3i$ |
+
+En este curso adoptaremos la convención $0\in\mathbb N$.
+
+Estos conjuntos permiten especificar qué valores pueden tomar las variables de un problema.
+
+Por ejemplo,
+
+$$
+x\in\mathbb R
+$$
+
+significa que $x$ representa un número real.
+
+## 1.4 Conjuntos por comprensión
+
+No siempre es conveniente enumerar todos los elementos de un conjunto.
+
+Podemos describirlos mediante una propiedad:
+
+$$
+A=\{x\in\mathbb R\mid x\geq 0\}.
+$$
+
+Se lee:
+
+*"A es el conjunto de los números reales x tales que x es mayor o igual que cero".*
+
+El símbolo $\mid$ se interpreta como **tal que**.
+
+### Ejemplo: restricciones de velocidad
+
+Supongamos que un motor puede operar entre 0 y 120 revoluciones por minuto.
+
+El conjunto de velocidades permitidas puede escribirse como
+
+$$
+V=\{v\in\mathbb R\mid 0\leq v\leq120\}.
+$$
+
+Esta expresión permite comunicar de forma precisa las restricciones del sistema.
+
+## 1.5 Subconjuntos
+
+Decimos que $A$ es un subconjunto de $B$, y escribimos
+
+$$
+A\subseteq B,
+$$
+
+si todos los elementos de $A$ también pertenecen a $B$.
+
+Formalmente,
+
+$$
+A\subseteq B
+\iff
+\forall x\,(x\in A\Rightarrow x\in B).
+$$
+
+Por ejemplo,
+
+$$
+\{1,2\}\subseteq\{1,2,3,4\}.
+$$
+
+Observa que esta definición utiliza símbolos lógicos que estudiaremos con mayor profundidad en la siguiente lección.
+
+## 1.6 Operaciones con conjuntos
+
+Sean
+
+$$
+A=\{1,2,3\},
+\qquad
+B=\{3,4,5\}.
+$$
+
+**Unión:** elementos que pertenecen a alguno de los conjuntos.
+
+$$
+A\cup B=\{1,2,3,4,5\}.
+$$
+
+**Intersección:** elementos que pertenecen a ambos conjuntos.
+
+$$
+A\cap B=\{3\}.
+$$
+
+**Diferencia:** elementos de $A$ que no pertenecen a $B$.
+
+$$
+A\setminus B=\{1,2\}.
+$$
+
+**Producto cartesiano:** conjunto de pares ordenados.
+
+$$
+A\times B
+=
+\{(a,b)\mid a\in A,\ b\in B\}.
+$$
+
+El producto cartesiano será especialmente importante para estudiar relaciones, funciones y coordenadas.
+
+# 2. Relaciones matemáticas
+
+## 2.1 ¿Qué es una relación?
+
+Una relación permite establecer correspondencias entre elementos de dos conjuntos.
+
+Consideremos dos conjuntos:
+
+$$
+A=\{1,2,3\},
+\qquad
+B=\{2,4,6\}.
+$$
+
+Podemos relacionar cada número de $A$ con su doble en $B$:
+
+$$
+R=\{(1,2),(2,4),(3,6)\}.
+$$
+
+Esta relación está formada por pares ordenados.
+
+## 2.2 Definición formal
+
+Sean $A$ y $B$ dos conjuntos.
+
+Una relación binaria de $A$ en $B$ es cualquier subconjunto del producto cartesiano:
+
+$$
+\boxed{R\subseteq A\times B}.
+$$
+
+Es decir, una relación es un conjunto de pares ordenados cuyos primeros elementos pertenecen a $A$ y cuyos segundos elementos pertenecen a $B$.
+
+### Ejemplo: robot y sensores
+
+Supongamos que tenemos dos robots:
+
+$$
+A=\{R_1,R_2\}
+$$
+
+y tres sensores:
+
+$$
+B=\{S_1,S_2,S_3\}.
+$$
+
+La relación
+
+$$
+R=\{(R_1,S_1),(R_1,S_2),(R_2,S_3)\}
+$$
+
+puede representar qué sensores utiliza cada robot.
+
+Observa que un mismo robot puede estar relacionado con varios sensores.
+
+Esta posibilidad será importante para distinguir una relación general de una función.
+
+# 3. Funciones
+
+## 3.1 De las relaciones a las funciones
+
+Una función es un tipo particular de relación.
+
+La idea fundamental es que cada elemento del dominio debe tener **exactamente una imagen**.
+
+Por ejemplo, consideremos una función que asigna a cada tiempo la posición de un robot.
+
+Para un mismo instante de tiempo, el modelo debe asignar una única posición.
+
+## 3.2 Definición formal
+
+Sean $A$ y $B$ dos conjuntos.
+
+Una función
+
+$$
+f:A\longrightarrow B
+$$
+
+es una relación que satisface:
+
+**Existencia:** para todo elemento $a\in A$, existe un elemento $b\in B$ relacionado con él.
+
+**Unicidad:** ningún elemento $a\in A$ puede estar relacionado con dos valores distintos de $B$.
+
+Formalmente,
+
+$$
+\forall a\in A,\ \exists! b\in B:
+(a,b)\in f.
+$$
+
+El símbolo $\exists!$ significa **existe un único**.
+
+## 3.3 Dominio, codominio e imagen
+
+Consideremos
+
+$$
+f:\mathbb R\longrightarrow\mathbb R,
+\qquad
+f(x)=x^2.
+$$
+
+- **Dominio:** conjunto de valores de entrada; en este caso, $\mathbb R$.
+- **Codominio:** conjunto declarado de posibles valores de salida; en este caso, $\mathbb R$.
+- **Imagen:** valores que realmente alcanza la función.
+
+Para este ejemplo,
+
+$$
+\operatorname{Im}(f)
+=
+\{y\in\mathbb R\mid y\geq0\}.
+$$
+
+Observa que **imagen y codominio no necesariamente son iguales**.
+
+Esta distinción será fundamental cuando estudiemos transformaciones lineales.
+
+## 3.4 Funciones entre espacios de coordenadas
+
+En robótica y animación, una posición en el plano puede representarse mediante un par ordenado:
+
+$$
+(x,y)\in\mathbb R^2.
+$$
+
+Una transformación puede definirse mediante
+
+$$
+T:\mathbb R^2\longrightarrow\mathbb R^2
+$$
+
+con
+
+$$
+T(x,y)=(2x,3y).
+$$
+
+Esta función transforma cada posición del plano en una nueva posición, duplicando su coordenada horizontal y triplicando la vertical.
+
+Por ejemplo,
+
+$$
+T(1,2)=(2,6).
+$$
+
+En álgebra lineal estudiaremos bajo qué condiciones estas transformaciones preservan las operaciones entre vectores.
+
+::: {.callout-note}
+## Conexión con Álgebra Lineal
+
+No toda función entre espacios de coordenadas es una transformación lineal.
+
+Para que una función $T$ sea lineal debe preservar la suma de vectores y la multiplicación por escalares.
+
+Más adelante estudiaremos estas condiciones formalmente.
+:::
+
+# 4. Notación matemática fundamental
+
+El lenguaje matemático utiliza símbolos para expresar de forma compacta relaciones y propiedades.
+
+| Símbolo | Significado |
+|---|---|
+| $\in$ | Pertenece a |
+| $\notin$ | No pertenece a |
+| $\subseteq$ | Es subconjunto de |
+| $\cup$ | Unión |
+| $\cap$ | Intersección |
+| $\varnothing$ | Conjunto vacío |
+| $\forall$ | Para todo |
+| $\exists$ | Existe |
+| $\exists!$ | Existe un único |
+| $\Rightarrow$ | Implica |
+| $\Leftrightarrow$ | Si y solo si |
+| $\mathbb R^n$ | Conjunto de $n$-tuplas reales |
+
+## 4.1 Lectura de expresiones matemáticas
+
+Consideremos la expresión
+
+$$
+\forall x\in\mathbb R,\quad x^2\geq0.
+$$
+
+Se lee:
+
+*"Para todo número real x, su cuadrado es mayor o igual que cero".*
+
+Ahora consideremos
+
+$$
+\exists x\in\mathbb R:\ x^2=4.
+$$
+
+Se lee:
+
+*"Existe un número real x cuyo cuadrado es igual a cuatro".*
+
+La primera expresión afirma algo sobre **todos** los números reales; la segunda únicamente afirma la existencia de **al menos uno**.
+
+## 4.2 De las palabras a los símbolos
+
+Afirmación:
+
+*"Todo número real positivo tiene un cuadrado positivo".*
+
+Podemos escribir:
+
+$$
+\forall x\in\mathbb R,\quad
+x>0\Rightarrow x^2>0.
+$$
+
+La escritura formal permite identificar claramente las condiciones de una afirmación.
+
+# 5. Aplicaciones
+
+## 5.1 Robótica: espacio de configuraciones
+
+Consideremos un brazo robótico con dos articulaciones rotatorias.
+
+Podemos representar su configuración mediante
+
+$$
+q=(\theta_1,\theta_2).
+$$
+
+Si ambas articulaciones admiten ángulos reales dentro de ciertos intervalos $I_1$ e $I_2$, entonces su espacio de configuraciones es
+
+$$
+Q=I_1\times I_2.
+$$
+
+Una función de cinemática directa asocia a cada configuración una posición del extremo del brazo:
+
+$$
+F:Q\longrightarrow\mathbb R^2.
+$$
+
+En esta formulación aparecen simultáneamente conjuntos, productos cartesianos, funciones y coordenadas.
+
+## 5.2 Software: funciones y tipos
+
+En programación, una función puede recibir un objeto de un tipo y devolver uno de otro.
+
+Por ejemplo, una función que recibe dos coordenadas reales y calcula su distancia al origen puede expresarse como
+
+$$
+d:\mathbb R^2\longrightarrow\mathbb R
+$$
+
+mediante
+
+$$
+d(x,y)=\sqrt{x^2+y^2}.
+$$
+
+La declaración del dominio y codominio ayuda a especificar formalmente el tipo de entradas y salidas esperadas.
+
+## 5.3 Animación: transformación de objetos
+
+Un objeto bidimensional puede representarse mediante un conjunto de puntos:
+
+$$
+P\subseteq\mathbb R^2.
+$$
+
+Si aplicamos una función
+
+$$
+T:\mathbb R^2\longrightarrow\mathbb R^2,
+$$
+
+el objeto transformado corresponde al conjunto
+
+$$
+T(P)=\{T(p)\mid p\in P\}.
+$$
+
+Esta notación permite describir transformaciones geométricas aplicadas a todos los puntos de una figura.
+
+# 6. Actividades
+
+## Actividad 1. Interpretación de conjuntos
+
+Sean
+
+$$
+A=\{1,2,3,4\},\quad B=\{3,4,5,6\}.
+$$
+
+1. Calcula $A\cup B$.
+2. Calcula $A\cap B$.
+3. Determina $A\setminus B$.
+4. ¿Es $\{3,4\}\subseteq A$? Justifica.
+
+## Actividad 2. Relaciones y funciones
+
+Considera las siguientes relaciones:
+
+$$
+R_1=\{(1,2),(2,4),(3,6)\}
+$$
+
+$$
+R_2=\{(1,2),(1,3),(2,4)\}.
+$$
+
+Determina cuál representa una función con dominio $\{1,2,3\}$ y explica tu respuesta utilizando las condiciones de existencia y unicidad.
+
+## Actividad 3. Lenguaje formal
+
+Traduce al lenguaje matemático:
+
+1. Todo número real es menor o igual que su cuadrado más uno.
+2. Existe un número entero cuyo cuadrado es nueve.
+3. Todos los elementos de $A$ pertenecen a $B$.
+4. Existe exactamente un número real que satisface $x+2=5$.
+
+Después determina cuáles afirmaciones son verdaderas.
+
+## Actividad 4. Transformaciones geométricas
+
+Considera
+
+$$
+T(x,y)=(x+y,y).
+$$
+
+1. Calcula $T(1,2)$.
+2. Calcula $T(0,0)$.
+3. Calcula $T(2,-1)$.
+4. Describe geométricamente qué sucede con los puntos del plano.
+5. Investiga si esta transformación puede expresarse mediante una matriz.
+
+::: {.callout-tip collapse="true"}
+## Respuestas para autoevaluación
+
+**Actividad 1**
+
+1. $\{1,2,3,4,5,6\}$
+2. $\{3,4\}$
+3. $\{1,2\}$
+4. Sí, porque ambos elementos pertenecen a $A$.
+
+**Actividad 2**
+
+$R_1$ sí representa una función con el dominio indicado.
+
+$R_2$ no: el elemento 1 tiene dos imágenes y el elemento 3 no tiene ninguna.
+
+**Actividad 3**
+
+1. $\forall x\in\mathbb R,\ x\leq x^2+1$. Verdadera.
+2. $\exists x\in\mathbb Z:\ x^2=9$. Verdadera.
+3. $\forall x\,(x\in A\Rightarrow x\in B)$. Su verdad depende de $A$ y $B$.
+4. $\exists!x\in\mathbb R:\ x+2=5$. Verdadera.
+
+**Actividad 4**
+
+1. $(3,2)$
+2. $(0,0)$
+3. $(1,-1)$
+
+La transformación es un cizallamiento horizontal y puede representarse por
+
+$$
+A=
+\begin{pmatrix}
+1&1\\
+0&1
+\end{pmatrix}.
+$$
+:::
+
+# 7. Para reflexionar
+
+Antes de continuar, responde con tus propias palabras:
+
+1. ¿Por qué una función es una relación, pero no toda relación es una función?
+2. ¿Qué diferencia existe entre el codominio y la imagen de una función?
+3. ¿Por qué es importante especificar a qué conjunto pertenece una variable?
+4. ¿Qué aporta el lenguaje formal a la descripción de un sistema robótico o computacional?
+5. ¿Qué ventajas y limitaciones encuentras al representar objetos geométricos mediante conjuntos y funciones?
+
+::: {.callout-important}
+## Conceptos que debes dominar
+
+Antes de avanzar a lógica y cuantificadores debes poder:
+
+- Interpretar operaciones básicas entre conjuntos.
+- Reconocer una relación como subconjunto de un producto cartesiano.
+- Determinar si una relación representa una función.
+- Distinguir dominio, codominio e imagen.
+- Traducir afirmaciones sencillas entre lenguaje natural y lenguaje matemático.
+:::
+
+---
+
+[← Volver a Álgebra Lineal](index.qmd)
+

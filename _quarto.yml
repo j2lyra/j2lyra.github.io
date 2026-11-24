@@ -1,0 +1,72 @@
+
+project:
+  type: website
+
+website:
+  title: "Matemáticas, Docencia e Investigación"
+  page-navigation: true
+  reader-mode: true
+
+  navbar:
+    search: true
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: cursos.qmd
+        text: Cursos
+      - href: olimpiadas/index.qmd
+        text: Olimpiadas
+      - href: investigacion.qmd
+        text: Investigación
+      - href: about.qmd
+        text: Sobre mí
+
+  sidebar:
+    - id: algebra
+      title: "Álgebra Lineal"
+      style: docked
+      collapse-level: 2
+      contents:
+        - text: "Presentación del curso"
+          href: cursos/algebra-lineal/index.qmd
+
+        - section: "Unidad 1. Fundamentos matemáticos"
+          contents:
+            - text: "1.1 Conjuntos, relaciones y funciones"
+              href: cursos/algebra-lineal/01-lenguaje.qmd
+
+    - id: olimpiadas
+      title: "Olimpiadas de Matemáticas"
+      style: docked
+      collapse-level: 2
+      contents:
+        - text: "Presentación"
+          href: olimpiadas/index.qmd
+
+        - section: "Álgebra"
+          contents:
+            - olimpiadas/algebra/index.qmd
+
+        - section: "Geometría"
+          contents:
+            - olimpiadas/geometria/index.qmd
+
+        - section: "Combinatoria"
+          contents:
+            - olimpiadas/combinatoria/index.qmd
+
+        - section: "Teoría de números"
+          contents:
+            - olimpiadas/teoria-numeros/index.qmd
+
+        - section: "Competencias"
+          contents:
+            - olimpiadas/competencias/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true

@@ -1,0 +1,123 @@
+
+---
+title: "Álgebra Lineal"
+sidebar: algebra
+toc: true
+toc-depth: 3
+---
+
+[← Volver a cursos](../cursos.qmd)
+
+## Presentación del curso
+
+
+El álgebra lineal constituye uno de los lenguajes fundamentales de las matemáticas y de sus aplicaciones en ciencias, ingeniería y computación. Sus conceptos permiten estudiar estructuras, representar relaciones y describir transformaciones que aparecen en una gran variedad de problemas.
+
+Este curso busca desarrollar una comprensión profunda de los conceptos del álgebra lineal mediante tres enfoques complementarios: **formal, intuitivo y aplicado**.
+
+Tomaremos como referencia principal el libro *Linear Algebra*, de Kenneth Hoffman y Ray Kunze, especialmente por su tratamiento formal de los espacios vectoriales y las transformaciones lineales. Sin embargo, el curso no seguirá necesariamente el orden ni el nivel de abstracción del texto.
+
+Se dará especial importancia a la comprensión del lenguaje matemático: aprenderemos a interpretar definiciones, proposiciones y teoremas, identificando sus hipótesis, conclusiones y relaciones lógicas. Buscaremos que los estudiantes comprendan tanto el significado de los resultados como las condiciones bajo las cuales son válidos.
+
+Al mismo tiempo, desarrollaremos una intuición geométrica y computacional de los conceptos mediante visualizaciones, experimentos numéricos y ejemplos aplicados.
+
+Aunque la demostración matemática es fundamental para comprender la estructura lógica de la disciplina, **el curso no estará centrado en la elaboración de demostraciones formales extensas**. Se incluirán demostraciones seleccionadas como material complementario, disponibles para quienes deseen profundizar en los fundamentos teóricos.
+
+### Objetivos de aprendizaje
+
+Al finalizar el curso, se espera que los estudiantes puedan:
+
+1. Interpretar y utilizar correctamente el lenguaje formal del álgebra lineal.
+2. Comprender las relaciones entre vectores, matrices, espacios vectoriales y transformaciones lineales.
+3. Desarrollar interpretaciones geométricas y computacionales de los principales conceptos.
+4. Reconocer las hipótesis y conclusiones de definiciones y teoremas.
+5. Aplicar herramientas del álgebra lineal a problemas de robótica, software y animación.
+6. Utilizar herramientas computacionales para explorar, verificar e interpretar resultados.
+
+### Contenido del curso
+
+#### Unidad 1. Lenguaje matemático y sistemas lineales
+
+- Conjuntos, funciones, relaciones y notación matemática.
+- Proposiciones, cuantificadores e implicaciones lógicas.
+- Definiciones, teoremas y estructura de una demostración.
+- Sistemas de ecuaciones lineales.
+- Matrices y operaciones elementales.
+- Eliminación de Gauss y Gauss-Jordan.
+
+**Aplicación:** sistemas de ecuaciones para modelar relaciones entre variables en programación, robótica y simulación.
+
+#### Unidad 2. Vectores y espacios vectoriales
+
+- Interpretación geométrica y algebraica de los vectores.
+- Combinaciones lineales y espacio generado.
+- Definición formal de espacio vectorial.
+- Subespacios vectoriales.
+- Dependencia e independencia lineal.
+- Bases, coordenadas y dimensión.
+
+**Aplicación:** representación de posiciones, velocidades y direcciones en sistemas robóticos y escenas tridimensionales.
+
+#### Unidad 3. Transformaciones lineales
+
+- Funciones entre espacios vectoriales.
+- Definición de transformación lineal.
+- Núcleo e imagen.
+- Representación matricial.
+- Composición de transformaciones.
+- Cambio de base.
+
+**Aplicación:** transformaciones geométricas, sistemas de coordenadas, gráficos por computadora y animación.
+
+#### Unidad 4. Determinantes y sistemas lineales
+
+- Interpretación algebraica y geométrica del determinante.
+- Propiedades fundamentales.
+- Matrices invertibles.
+- Rango y soluciones de sistemas lineales.
+- Interpretación geométrica de la invertibilidad.
+
+**Aplicación:** deformaciones geométricas, cambios de orientación y resolución de sistemas en software científico.
+
+#### Unidad 5. Valores y vectores propios
+
+- Valores y vectores propios.
+- Polinomio característico.
+- Diagonalización.
+- Interpretación geométrica de los vectores propios.
+- Sistemas dinámicos discretos.
+
+**Aplicación:** análisis de transformaciones, comportamiento de sistemas dinámicos y simulaciones computacionales.
+
+#### Unidad 6. Producto interno y ortogonalidad
+
+- Producto interno y norma.
+- Ángulos y proyecciones.
+- Ortogonalidad.
+- Bases ortonormales.
+- Proceso de Gram-Schmidt.
+- Aproximación por mínimos cuadrados.
+
+**Aplicación:** proyecciones geométricas, procesamiento de datos, orientación espacial y gráficos tridimensionales.
+
+---
+
+### Metodología
+
+Cada tema se desarrollará a partir de cuatro componentes:
+
+**1. Intuición y exploración.** Introduciremos los conceptos mediante problemas, visualizaciones geométricas, experimentos o situaciones concretas.
+
+**2. Formalización.** Construiremos las definiciones y analizaremos sus propiedades utilizando lenguaje matemático preciso.
+
+**3. Aplicación.** Resolveremos problemas vinculados con programación, robótica, animación y otras áreas de la ingeniería.
+
+**4. Profundización teórica.** Se ofrecerán demostraciones y resultados complementarios para quienes deseen estudiar con mayor rigor la estructura matemática del tema.
+
+### Bibliografía principal
+
+Hoffman, K., & Kunze, R. (1971). *Linear Algebra* (2.ª ed.). Prentice-Hall.
+
+### Recursos
+
+Los materiales del curso incluirán notas teóricas, ejercicios, visualizaciones interactivas, ejemplos computacionales y demostraciones complementarias.

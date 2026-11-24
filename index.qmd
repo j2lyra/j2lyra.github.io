@@ -1,0 +1,97 @@
+
+---
+title: "Inicio"
+toc: false
+---
+
+<style>
+#title-block-header {
+  display: none;
+}
+</style>
+
+:::: {.columns .profile-header}
+
+::: {.column width="25%"}
+
+![](images/profile.jpeg){width=180px .rounded-circle}
+
+:::
+
+::: {.column width="75%"}
+
+# José Manuel Lira
+
+**Matemáticas · Docencia · Neurociencias cognitivas**
+
+Soy ingeniero en Nanotecnología por el Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO), con formación adicional en matemáticas. Actualmente imparto clases en el Centro Universitario de Chapala (CUChapala), de la Universidad de Guadalajara.
+
+Mi trayectoria ha estado vinculada principalmente a la enseñanza de las matemáticas, la resolución de problemas y la formación de estudiantes.
+
+:::
+
+::::
+
+Desde hace más de diez años participo en la preparación de estudiantes para olimpiadas de matemáticas, desde competencias regionales y estatales hasta certámenes nacionales e internacionales, entre ellos la Olimpiada Mexicana de Matemáticas (OMM), Singapore International Math Olympiad Challenge (SIMOC), Vanda Science Competition, International Mathematics Competition (IMC) y European Girls' Mathematical Olympiad (EGMO). También he colaborado en el diseño y selección de problemas, la organización de competencias y el desarrollo de programas de entrenamiento, particularmente en la Olimpiada de Matemáticas de la Ribera de Chapala y otras iniciativas educativas en Jalisco.
+
+Mi experiencia como docente y entrenador me ha llevado a interesarme no solamente por cómo enseñar matemáticas, sino por **qué significa comprenderlas y cómo se construye el conocimiento matemático**. Me interesa entender qué sucede cuando una persona se enfrenta a un problema para el que no dispone de un procedimiento inmediato: cómo reconoce estructuras, recupera conocimientos previos, construye representaciones, formula conjeturas y desarrolla nuevas estrategias.
+
+Estas preguntas me han acercado a las neurociencias cognitivas, la epistemología y las perspectivas contemporáneas de la cognición matemática. Me interesa especialmente la relación entre los mecanismos cognitivos que hacen posible el pensamiento matemático y las prácticas mediante las cuales ese pensamiento se desarrolla, se comunica y adquiere significado.
+
+## Investigación
+
+Mis intereses de investigación se sitúan en la intersección de las **neurociencias cognitivas, la epistemología de las matemáticas y las ciencias del aprendizaje**, con especial atención a los mecanismos y las prácticas que intervienen en la construcción, representación y movilización del conocimiento matemático.
+
+### Neurociencias cognitivas y cognición matemática
+
+Me interesa estudiar los procesos neurocognitivos involucrados en la adquisición y utilización de conceptos matemáticos, particularmente la memoria de trabajo, la atención, las funciones ejecutivas, la metacognición, la abstracción y la formación de representaciones simbólicas.
+
+Desde esta perspectiva, considero relevante investigar cómo los mecanismos de procesamiento numérico y simbólico se articulan con procesos cognitivos de mayor complejidad, como el razonamiento deductivo, el reconocimiento de patrones, la generalización y la resolución de problemas no rutinarios.
+
+También me interesa la relación entre la experiencia de aprendizaje y la reorganización funcional de los sistemas cognitivos, así como las posibilidades y limitaciones de explicar el pensamiento matemático mediante mecanismos neurobiológicos.
+
+### Epistemología y praxis matemática
+
+Una de mis inquietudes centrales es comprender qué significa **saber matemáticas**. Esta pregunta no se reduce al dominio de definiciones, algoritmos o procedimientos, sino que involucra la capacidad de establecer relaciones conceptuales, construir argumentos, reconocer condiciones de validez y generar nuevas formas de resolver problemas.
+
+Desde una perspectiva epistemológica, me interesa examinar cómo se constituye y justifica el conocimiento matemático, así como las relaciones entre la intuición, la formalización, la demostración y la experiencia.
+
+Asimismo, me interesa estudiar la **praxis matemática** como una actividad en la que el conocimiento se construye y transforma mediante la interacción entre razonamiento, acción, representaciones simbólicas, herramientas y prácticas sociales. Las olimpiadas de matemáticas representan un contexto especialmente interesante para observar estos procesos, pues los estudiantes deben interpretar situaciones desconocidas, construir estrategias, comunicar ideas y justificar soluciones.
+
+### Cognición 4E y construcción del conocimiento
+
+Me interesa explorar las perspectivas de la cognición 4E —corporizada, situada, enactiva y extendida— para comprender cómo la actividad matemática puede involucrar procesos que trascienden una concepción exclusivamente interna o cerebral de la cognición.
+
+Este enfoque permite investigar el papel del cuerpo, las experiencias sensorimotoras, las representaciones externas, los instrumentos y los entornos socioculturales en la construcción del pensamiento matemático.
+
+En particular, me interesa analizar cómo ciertas experiencias, metáforas conceptuales y formas de interacción con objetos o representaciones pueden contribuir a la comprensión de conceptos abstractos, así como las relaciones entre estas experiencias y los procesos de formalización matemática.
+
+### Prerrequisitos cognitivos y resolución de problemas
+
+Una línea de investigación que actualmente exploro consiste en identificar **qué conocimientos, experiencias y recursos cognitivos son necesarios para comprender y resolver problemas matemáticos no rutinarios**.
+
+Esta propuesta contempla la construcción de modelos de dependencia conceptual mediante grafos, donde los nodos representan conocimientos, conceptos, estrategias o recursos matemáticos, y las aristas describen relaciones de prerrequisito o dependencia entre ellos.
+
+El objetivo es examinar cómo diferentes estructuras de conocimiento pueden dar lugar a distintas rutas de resolución, reconociendo que un mismo problema puede abordarse mediante estrategias conceptualmente diferentes.
+
+También me interesa explorar el uso de modelos de lenguaje de gran escala (LLM) como herramientas de apoyo para la identificación y organización de estas estructuras, mediante procedimientos de validación matemática y análisis cognitivo.
+
+Desde una perspectiva más amplia, esta línea busca contribuir al estudio de las relaciones entre conocimiento previo, comprensión conceptual, experiencia y resolución de problemas, con posibles aplicaciones en el diseño de experiencias de aprendizaje matemático.
+
+---
+
+## Cursos
+
+En esta sección comparto materiales didácticos, notas de clase, ejercicios y recursos relacionados con distintas áreas de las matemáticas. Los contenidos están orientados al desarrollo de la comprensión conceptual, la argumentación y las habilidades de resolución de problemas.
+
+### [Precálculo](cursos.qmd#precálculo)
+
+Funciones, polinomios, expresiones algebraicas, funciones racionales y fundamentos matemáticos para el estudio del cálculo.
+
+### [Álgebra Lineal](cursos/algebra-lineal/index.qmd)
+
+Sistemas de ecuaciones lineales, matrices, espacios vectoriales, transformaciones lineales y sus aplicaciones.
+
+### [Estadística Inferencial](cursos.qmd#estadística-inferencial)
+
+Probabilidad, distribuciones de muestreo, estimación de parámetros, intervalos de confianza y pruebas de hipótesis.
