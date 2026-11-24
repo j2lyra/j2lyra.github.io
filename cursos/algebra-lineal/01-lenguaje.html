@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1.1 Conjuntos, relaciones, funciones y notación – Matemáticas, Docencia e Investigación</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../cursos/algebra-lineal/index.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2d6878a0cbbbb92baba035c51c0899be.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Matemáticas, Docencia e Investigación</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cursos.html"> 
+<span class="menu-text">Cursos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../olimpiadas/index.html"> 
+<span class="menu-text">Olimpiadas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../investigacion.html"> 
+<span class="menu-text">Investigación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Sobre mí</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../cursos/algebra-lineal/01-lenguaje.html">Unidad 1. Fundamentos matemáticos</a></li><li class="breadcrumb-item"><a href="../../cursos/algebra-lineal/01-lenguaje.html">1.1 Conjuntos, relaciones y funciones</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Section">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../cursos/algebra-lineal/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación del curso</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Unidad 1. Fundamentos matemáticos</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../cursos/algebra-lineal/01-lenguaje.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1.1 Conjuntos, relaciones y funciones</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#conjuntos" id="toc-conjuntos" class="nav-link" data-scroll-target="#conjuntos">1. Conjuntos</a>
+  <ul class="collapse">
+  <li><a href="#intuición" id="toc-intuición" class="nav-link" data-scroll-target="#intuición">1.1 Intuición</a></li>
+  <li><a href="#definición-y-notación" id="toc-definición-y-notación" class="nav-link" data-scroll-target="#definición-y-notación">1.2 Definición y notación</a></li>
+  <li><a href="#conjuntos-numéricos" id="toc-conjuntos-numéricos" class="nav-link" data-scroll-target="#conjuntos-numéricos">1.3 Conjuntos numéricos</a></li>
+  <li><a href="#conjuntos-por-comprensión" id="toc-conjuntos-por-comprensión" class="nav-link" data-scroll-target="#conjuntos-por-comprensión">1.4 Conjuntos por comprensión</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-restricciones-de-velocidad" id="toc-ejemplo-restricciones-de-velocidad" class="nav-link" data-scroll-target="#ejemplo-restricciones-de-velocidad">Ejemplo: restricciones de velocidad</a></li>
+  </ul></li>
+  <li><a href="#subconjuntos" id="toc-subconjuntos" class="nav-link" data-scroll-target="#subconjuntos">1.5 Subconjuntos</a></li>
+  <li><a href="#operaciones-con-conjuntos" id="toc-operaciones-con-conjuntos" class="nav-link" data-scroll-target="#operaciones-con-conjuntos">1.6 Operaciones con conjuntos</a></li>
+  </ul></li>
+  <li><a href="#relaciones-matemáticas" id="toc-relaciones-matemáticas" class="nav-link" data-scroll-target="#relaciones-matemáticas">2. Relaciones matemáticas</a>
+  <ul class="collapse">
+  <li><a href="#qué-es-una-relación" id="toc-qué-es-una-relación" class="nav-link" data-scroll-target="#qué-es-una-relación">2.1 ¿Qué es una relación?</a></li>
+  <li><a href="#definición-formal" id="toc-definición-formal" class="nav-link" data-scroll-target="#definición-formal">2.2 Definición formal</a>
+  <ul class="collapse">
+  <li><a href="#ejemplo-robot-y-sensores" id="toc-ejemplo-robot-y-sensores" class="nav-link" data-scroll-target="#ejemplo-robot-y-sensores">Ejemplo: robot y sensores</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#funciones" id="toc-funciones" class="nav-link" data-scroll-target="#funciones">3. Funciones</a>
+  <ul class="collapse">
+  <li><a href="#de-las-relaciones-a-las-funciones" id="toc-de-las-relaciones-a-las-funciones" class="nav-link" data-scroll-target="#de-las-relaciones-a-las-funciones">3.1 De las relaciones a las funciones</a></li>
+  <li><a href="#definición-formal-1" id="toc-definición-formal-1" class="nav-link" data-scroll-target="#definición-formal-1">3.2 Definición formal</a></li>
+  <li><a href="#dominio-codominio-e-imagen" id="toc-dominio-codominio-e-imagen" class="nav-link" data-scroll-target="#dominio-codominio-e-imagen">3.3 Dominio, codominio e imagen</a></li>
+  <li><a href="#funciones-entre-espacios-de-coordenadas" id="toc-funciones-entre-espacios-de-coordenadas" class="nav-link" data-scroll-target="#funciones-entre-espacios-de-coordenadas">3.4 Funciones entre espacios de coordenadas</a></li>
+  </ul></li>
+  <li><a href="#notación-matemática-fundamental" id="toc-notación-matemática-fundamental" class="nav-link" data-scroll-target="#notación-matemática-fundamental">4. Notación matemática fundamental</a>
+  <ul class="collapse">
+  <li><a href="#lectura-de-expresiones-matemáticas" id="toc-lectura-de-expresiones-matemáticas" class="nav-link" data-scroll-target="#lectura-de-expresiones-matemáticas">4.1 Lectura de expresiones matemáticas</a></li>
+  <li><a href="#de-las-palabras-a-los-símbolos" id="toc-de-las-palabras-a-los-símbolos" class="nav-link" data-scroll-target="#de-las-palabras-a-los-símbolos">4.2 De las palabras a los símbolos</a></li>
+  </ul></li>
+  <li><a href="#aplicaciones" id="toc-aplicaciones" class="nav-link" data-scroll-target="#aplicaciones">5. Aplicaciones</a>
+  <ul class="collapse">
+  <li><a href="#robótica-espacio-de-configuraciones" id="toc-robótica-espacio-de-configuraciones" class="nav-link" data-scroll-target="#robótica-espacio-de-configuraciones">5.1 Robótica: espacio de configuraciones</a></li>
+  <li><a href="#software-funciones-y-tipos" id="toc-software-funciones-y-tipos" class="nav-link" data-scroll-target="#software-funciones-y-tipos">5.2 Software: funciones y tipos</a></li>
+  <li><a href="#animación-transformación-de-objetos" id="toc-animación-transformación-de-objetos" class="nav-link" data-scroll-target="#animación-transformación-de-objetos">5.3 Animación: transformación de objetos</a></li>
+  </ul></li>
+  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades">6. Actividades</a>
+  <ul class="collapse">
+  <li><a href="#actividad-1.-interpretación-de-conjuntos" id="toc-actividad-1.-interpretación-de-conjuntos" class="nav-link" data-scroll-target="#actividad-1.-interpretación-de-conjuntos">Actividad 1. Interpretación de conjuntos</a></li>
+  <li><a href="#actividad-2.-relaciones-y-funciones" id="toc-actividad-2.-relaciones-y-funciones" class="nav-link" data-scroll-target="#actividad-2.-relaciones-y-funciones">Actividad 2. Relaciones y funciones</a></li>
+  <li><a href="#actividad-3.-lenguaje-formal" id="toc-actividad-3.-lenguaje-formal" class="nav-link" data-scroll-target="#actividad-3.-lenguaje-formal">Actividad 3. Lenguaje formal</a></li>
+  <li><a href="#actividad-4.-transformaciones-geométricas" id="toc-actividad-4.-transformaciones-geométricas" class="nav-link" data-scroll-target="#actividad-4.-transformaciones-geométricas">Actividad 4. Transformaciones geométricas</a></li>
+  </ul></li>
+  <li><a href="#para-reflexionar" id="toc-para-reflexionar" class="nav-link" data-scroll-target="#para-reflexionar">7. Para reflexionar</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../cursos/algebra-lineal/01-lenguaje.html">Unidad 1. Fundamentos matemáticos</a></li><li class="breadcrumb-item"><a href="../../cursos/algebra-lineal/01-lenguaje.html">1.1 Conjuntos, relaciones y funciones</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">1.1 Conjuntos, relaciones, funciones y notación</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introducción" class="level1">
+<h1>Introducción</h1>
+<p>Las matemáticas no consisten únicamente en realizar cálculos. También constituyen un lenguaje que permite describir objetos abstractos, establecer relaciones entre ellos y formular afirmaciones precisas.</p>
+<p>En álgebra lineal encontraremos expresiones como</p>
+<p><span class="math display">\[
+T:V\longrightarrow W
+\]</span></p>
+<p>o</p>
+<p><span class="math display">\[
+\forall u,v\in V,\quad
+T(u+v)=T(u)+T(v).
+\]</span></p>
+<p>Aunque inicialmente puedan parecer complicadas, estas expresiones comunican ideas que pueden explicarse con palabras.</p>
+<p>Nuestro primer objetivo será aprender a interpretar este lenguaje, comprender los objetos que representa y utilizarlo para describir situaciones matemáticas y computacionales.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Idea central
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El formalismo matemático no sustituye la intuición: permite expresar nuestras intuiciones de manera precisa, evitando ambigüedades.</p>
+<p>Una parte fundamental de aprender matemáticas consiste en poder pasar de una explicación intuitiva a una formulación rigurosa y viceversa.</p>
+</div>
+</div>
+</section>
+<section id="conjuntos" class="level1">
+<h1>1. Conjuntos</h1>
+<section id="intuición" class="level2">
+<h2 class="anchored" data-anchor-id="intuición">1.1 Intuición</h2>
+<p>Un conjunto es una colección bien definida de objetos, llamados <strong>elementos</strong>.</p>
+<p>Por ejemplo, podemos considerar el conjunto de los ejes de un robot:</p>
+<p><span class="math display">\[
+E=\{x,y,z\}.
+\]</span></p>
+<p>También podemos considerar el conjunto de números naturales entre uno y cinco:</p>
+<p><span class="math display">\[
+A=\{1,2,3,4,5\}.
+\]</span></p>
+<p>Lo importante es que podamos determinar si un objeto pertenece o no al conjunto.</p>
+</section>
+<section id="definición-y-notación" class="level2">
+<h2 class="anchored" data-anchor-id="definición-y-notación">1.2 Definición y notación</h2>
+<p>Dos símbolos fundamentales son:</p>
+<ul>
+<li><span class="math inline">\(a\in A\)</span>: el elemento <span class="math inline">\(a\)</span> pertenece al conjunto <span class="math inline">\(A\)</span>.</li>
+<li><span class="math inline">\(a\notin A\)</span>: el elemento <span class="math inline">\(a\)</span> no pertenece al conjunto <span class="math inline">\(A\)</span>.</li>
+</ul>
+<p>Por ejemplo, si</p>
+<p><span class="math display">\[
+A=\{2,4,6,8\},
+\]</span></p>
+<p>entonces</p>
+<p><span class="math display">\[
+4\in A,\qquad 5\notin A.
+\]</span></p>
+<p>En un conjunto, el orden y las repeticiones no modifican sus elementos:</p>
+<p><span class="math display">\[
+\{1,2,3\}=\{3,2,1,1\}.
+\]</span></p>
+</section>
+<section id="conjuntos-numéricos" class="level2">
+<h2 class="anchored" data-anchor-id="conjuntos-numéricos">1.3 Conjuntos numéricos</h2>
+<p>Utilizaremos frecuentemente los siguientes conjuntos:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Conjunto</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\mathbb N\)</span></td>
+<td>Naturales</td>
+<td><span class="math inline">\(0,1,2,3,\ldots\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\mathbb Z\)</span></td>
+<td>Enteros</td>
+<td><span class="math inline">\(-2,-1,0,1,2\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\mathbb Q\)</span></td>
+<td>Racionales</td>
+<td><span class="math inline">\(\frac12,-\frac34\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\mathbb R\)</span></td>
+<td>Reales</td>
+<td><span class="math inline">\(\sqrt2,\pi,-5\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\mathbb C\)</span></td>
+<td>Complejos</td>
+<td><span class="math inline">\(2+3i\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>En este curso adoptaremos la convención <span class="math inline">\(0\in\mathbb N\)</span>.</p>
+<p>Estos conjuntos permiten especificar qué valores pueden tomar las variables de un problema.</p>
+<p>Por ejemplo,</p>
+<p><span class="math display">\[
+x\in\mathbb R
+\]</span></p>
+<p>significa que <span class="math inline">\(x\)</span> representa un número real.</p>
+</section>
+<section id="conjuntos-por-comprensión" class="level2">
+<h2 class="anchored" data-anchor-id="conjuntos-por-comprensión">1.4 Conjuntos por comprensión</h2>
+<p>No siempre es conveniente enumerar todos los elementos de un conjunto.</p>
+<p>Podemos describirlos mediante una propiedad:</p>
+<p><span class="math display">\[
+A=\{x\in\mathbb R\mid x\geq 0\}.
+\]</span></p>
+<p>Se lee:</p>
+<p><em>“A es el conjunto de los números reales x tales que x es mayor o igual que cero”.</em></p>
+<p>El símbolo <span class="math inline">\(\mid\)</span> se interpreta como <strong>tal que</strong>.</p>
+<section id="ejemplo-restricciones-de-velocidad" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-restricciones-de-velocidad">Ejemplo: restricciones de velocidad</h3>
+<p>Supongamos que un motor puede operar entre 0 y 120 revoluciones por minuto.</p>
+<p>El conjunto de velocidades permitidas puede escribirse como</p>
+<p><span class="math display">\[
+V=\{v\in\mathbb R\mid 0\leq v\leq120\}.
+\]</span></p>
+<p>Esta expresión permite comunicar de forma precisa las restricciones del sistema.</p>
+</section>
+</section>
+<section id="subconjuntos" class="level2">
+<h2 class="anchored" data-anchor-id="subconjuntos">1.5 Subconjuntos</h2>
+<p>Decimos que <span class="math inline">\(A\)</span> es un subconjunto de <span class="math inline">\(B\)</span>, y escribimos</p>
+<p><span class="math display">\[
+A\subseteq B,
+\]</span></p>
+<p>si todos los elementos de <span class="math inline">\(A\)</span> también pertenecen a <span class="math inline">\(B\)</span>.</p>
+<p>Formalmente,</p>
+<p><span class="math display">\[
+A\subseteq B
+\iff
+\forall x\,(x\in A\Rightarrow x\in B).
+\]</span></p>
+<p>Por ejemplo,</p>
+<p><span class="math display">\[
+\{1,2\}\subseteq\{1,2,3,4\}.
+\]</span></p>
+<p>Observa que esta definición utiliza símbolos lógicos que estudiaremos con mayor profundidad en la siguiente lección.</p>
+</section>
+<section id="operaciones-con-conjuntos" class="level2">
+<h2 class="anchored" data-anchor-id="operaciones-con-conjuntos">1.6 Operaciones con conjuntos</h2>
+<p>Sean</p>
+<p><span class="math display">\[
+A=\{1,2,3\},
+\qquad
+B=\{3,4,5\}.
+\]</span></p>
+<p><strong>Unión:</strong> elementos que pertenecen a alguno de los conjuntos.</p>
+<p><span class="math display">\[
+A\cup B=\{1,2,3,4,5\}.
+\]</span></p>
+<p><strong>Intersección:</strong> elementos que pertenecen a ambos conjuntos.</p>
+<p><span class="math display">\[
+A\cap B=\{3\}.
+\]</span></p>
+<p><strong>Diferencia:</strong> elementos de <span class="math inline">\(A\)</span> que no pertenecen a <span class="math inline">\(B\)</span>.</p>
+<p><span class="math display">\[
+A\setminus B=\{1,2\}.
+\]</span></p>
+<p><strong>Producto cartesiano:</strong> conjunto de pares ordenados.</p>
+<p><span class="math display">\[
+A\times B
+=
+\{(a,b)\mid a\in A,\ b\in B\}.
+\]</span></p>
+<p>El producto cartesiano será especialmente importante para estudiar relaciones, funciones y coordenadas.</p>
+</section>
+</section>
+<section id="relaciones-matemáticas" class="level1">
+<h1>2. Relaciones matemáticas</h1>
+<section id="qué-es-una-relación" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-una-relación">2.1 ¿Qué es una relación?</h2>
+<p>Una relación permite establecer correspondencias entre elementos de dos conjuntos.</p>
+<p>Consideremos dos conjuntos:</p>
+<p><span class="math display">\[
+A=\{1,2,3\},
+\qquad
+B=\{2,4,6\}.
+\]</span></p>
+<p>Podemos relacionar cada número de <span class="math inline">\(A\)</span> con su doble en <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[
+R=\{(1,2),(2,4),(3,6)\}.
+\]</span></p>
+<p>Esta relación está formada por pares ordenados.</p>
+</section>
+<section id="definición-formal" class="level2">
+<h2 class="anchored" data-anchor-id="definición-formal">2.2 Definición formal</h2>
+<p>Sean <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> dos conjuntos.</p>
+<p>Una relación binaria de <span class="math inline">\(A\)</span> en <span class="math inline">\(B\)</span> es cualquier subconjunto del producto cartesiano:</p>
+<p><span class="math display">\[
+\boxed{R\subseteq A\times B}.
+\]</span></p>
+<p>Es decir, una relación es un conjunto de pares ordenados cuyos primeros elementos pertenecen a <span class="math inline">\(A\)</span> y cuyos segundos elementos pertenecen a <span class="math inline">\(B\)</span>.</p>
+<section id="ejemplo-robot-y-sensores" class="level3">
+<h3 class="anchored" data-anchor-id="ejemplo-robot-y-sensores">Ejemplo: robot y sensores</h3>
+<p>Supongamos que tenemos dos robots:</p>
+<p><span class="math display">\[
+A=\{R_1,R_2\}
+\]</span></p>
+<p>y tres sensores:</p>
+<p><span class="math display">\[
+B=\{S_1,S_2,S_3\}.
+\]</span></p>
+<p>La relación</p>
+<p><span class="math display">\[
+R=\{(R_1,S_1),(R_1,S_2),(R_2,S_3)\}
+\]</span></p>
+<p>puede representar qué sensores utiliza cada robot.</p>
+<p>Observa que un mismo robot puede estar relacionado con varios sensores.</p>
+<p>Esta posibilidad será importante para distinguir una relación general de una función.</p>
+</section>
+</section>
+</section>
+<section id="funciones" class="level1">
+<h1>3. Funciones</h1>
+<section id="de-las-relaciones-a-las-funciones" class="level2">
+<h2 class="anchored" data-anchor-id="de-las-relaciones-a-las-funciones">3.1 De las relaciones a las funciones</h2>
+<p>Una función es un tipo particular de relación.</p>
+<p>La idea fundamental es que cada elemento del dominio debe tener <strong>exactamente una imagen</strong>.</p>
+<p>Por ejemplo, consideremos una función que asigna a cada tiempo la posición de un robot.</p>
+<p>Para un mismo instante de tiempo, el modelo debe asignar una única posición.</p>
+</section>
+<section id="definición-formal-1" class="level2">
+<h2 class="anchored" data-anchor-id="definición-formal-1">3.2 Definición formal</h2>
+<p>Sean <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> dos conjuntos.</p>
+<p>Una función</p>
+<p><span class="math display">\[
+f:A\longrightarrow B
+\]</span></p>
+<p>es una relación que satisface:</p>
+<p><strong>Existencia:</strong> para todo elemento <span class="math inline">\(a\in A\)</span>, existe un elemento <span class="math inline">\(b\in B\)</span> relacionado con él.</p>
+<p><strong>Unicidad:</strong> ningún elemento <span class="math inline">\(a\in A\)</span> puede estar relacionado con dos valores distintos de <span class="math inline">\(B\)</span>.</p>
+<p>Formalmente,</p>
+<p><span class="math display">\[
+\forall a\in A,\ \exists! b\in B:
+(a,b)\in f.
+\]</span></p>
+<p>El símbolo <span class="math inline">\(\exists!\)</span> significa <strong>existe un único</strong>.</p>
+</section>
+<section id="dominio-codominio-e-imagen" class="level2">
+<h2 class="anchored" data-anchor-id="dominio-codominio-e-imagen">3.3 Dominio, codominio e imagen</h2>
+<p>Consideremos</p>
+<p><span class="math display">\[
+f:\mathbb R\longrightarrow\mathbb R,
+\qquad
+f(x)=x^2.
+\]</span></p>
+<ul>
+<li><strong>Dominio:</strong> conjunto de valores de entrada; en este caso, <span class="math inline">\(\mathbb R\)</span>.</li>
+<li><strong>Codominio:</strong> conjunto declarado de posibles valores de salida; en este caso, <span class="math inline">\(\mathbb R\)</span>.</li>
+<li><strong>Imagen:</strong> valores que realmente alcanza la función.</li>
+</ul>
+<p>Para este ejemplo,</p>
+<p><span class="math display">\[
+\operatorname{Im}(f)
+=
+\{y\in\mathbb R\mid y\geq0\}.
+\]</span></p>
+<p>Observa que <strong>imagen y codominio no necesariamente son iguales</strong>.</p>
+<p>Esta distinción será fundamental cuando estudiemos transformaciones lineales.</p>
+</section>
+<section id="funciones-entre-espacios-de-coordenadas" class="level2">
+<h2 class="anchored" data-anchor-id="funciones-entre-espacios-de-coordenadas">3.4 Funciones entre espacios de coordenadas</h2>
+<p>En robótica y animación, una posición en el plano puede representarse mediante un par ordenado:</p>
+<p><span class="math display">\[
+(x,y)\in\mathbb R^2.
+\]</span></p>
+<p>Una transformación puede definirse mediante</p>
+<p><span class="math display">\[
+T:\mathbb R^2\longrightarrow\mathbb R^2
+\]</span></p>
+<p>con</p>
+<p><span class="math display">\[
+T(x,y)=(2x,3y).
+\]</span></p>
+<p>Esta función transforma cada posición del plano en una nueva posición, duplicando su coordenada horizontal y triplicando la vertical.</p>
+<p>Por ejemplo,</p>
+<p><span class="math display">\[
+T(1,2)=(2,6).
+\]</span></p>
+<p>En álgebra lineal estudiaremos bajo qué condiciones estas transformaciones preservan las operaciones entre vectores.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Conexión con Álgebra Lineal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No toda función entre espacios de coordenadas es una transformación lineal.</p>
+<p>Para que una función <span class="math inline">\(T\)</span> sea lineal debe preservar la suma de vectores y la multiplicación por escalares.</p>
+<p>Más adelante estudiaremos estas condiciones formalmente.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="notación-matemática-fundamental" class="level1">
+<h1>4. Notación matemática fundamental</h1>
+<p>El lenguaje matemático utiliza símbolos para expresar de forma compacta relaciones y propiedades.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\in\)</span></td>
+<td>Pertenece a</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\notin\)</span></td>
+<td>No pertenece a</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\subseteq\)</span></td>
+<td>Es subconjunto de</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\cup\)</span></td>
+<td>Unión</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\cap\)</span></td>
+<td>Intersección</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\varnothing\)</span></td>
+<td>Conjunto vacío</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\forall\)</span></td>
+<td>Para todo</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\exists\)</span></td>
+<td>Existe</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\exists!\)</span></td>
+<td>Existe un único</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\Rightarrow\)</span></td>
+<td>Implica</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\Leftrightarrow\)</span></td>
+<td>Si y solo si</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\mathbb R^n\)</span></td>
+<td>Conjunto de <span class="math inline">\(n\)</span>-tuplas reales</td>
+</tr>
+</tbody>
+</table>
+<section id="lectura-de-expresiones-matemáticas" class="level2">
+<h2 class="anchored" data-anchor-id="lectura-de-expresiones-matemáticas">4.1 Lectura de expresiones matemáticas</h2>
+<p>Consideremos la expresión</p>
+<p><span class="math display">\[
+\forall x\in\mathbb R,\quad x^2\geq0.
+\]</span></p>
+<p>Se lee:</p>
+<p><em>“Para todo número real x, su cuadrado es mayor o igual que cero”.</em></p>
+<p>Ahora consideremos</p>
+<p><span class="math display">\[
+\exists x\in\mathbb R:\ x^2=4.
+\]</span></p>
+<p>Se lee:</p>
+<p><em>“Existe un número real x cuyo cuadrado es igual a cuatro”.</em></p>
+<p>La primera expresión afirma algo sobre <strong>todos</strong> los números reales; la segunda únicamente afirma la existencia de <strong>al menos uno</strong>.</p>
+</section>
+<section id="de-las-palabras-a-los-símbolos" class="level2">
+<h2 class="anchored" data-anchor-id="de-las-palabras-a-los-símbolos">4.2 De las palabras a los símbolos</h2>
+<p>Afirmación:</p>
+<p><em>“Todo número real positivo tiene un cuadrado positivo”.</em></p>
+<p>Podemos escribir:</p>
+<p><span class="math display">\[
+\forall x\in\mathbb R,\quad
+x&gt;0\Rightarrow x^2&gt;0.
+\]</span></p>
+<p>La escritura formal permite identificar claramente las condiciones de una afirmación.</p>
+</section>
+</section>
+<section id="aplicaciones" class="level1">
+<h1>5. Aplicaciones</h1>
+<section id="robótica-espacio-de-configuraciones" class="level2">
+<h2 class="anchored" data-anchor-id="robótica-espacio-de-configuraciones">5.1 Robótica: espacio de configuraciones</h2>
+<p>Consideremos un brazo robótico con dos articulaciones rotatorias.</p>
+<p>Podemos representar su configuración mediante</p>
+<p><span class="math display">\[
+q=(\theta_1,\theta_2).
+\]</span></p>
+<p>Si ambas articulaciones admiten ángulos reales dentro de ciertos intervalos <span class="math inline">\(I_1\)</span> e <span class="math inline">\(I_2\)</span>, entonces su espacio de configuraciones es</p>
+<p><span class="math display">\[
+Q=I_1\times I_2.
+\]</span></p>
+<p>Una función de cinemática directa asocia a cada configuración una posición del extremo del brazo:</p>
+<p><span class="math display">\[
+F:Q\longrightarrow\mathbb R^2.
+\]</span></p>
+<p>En esta formulación aparecen simultáneamente conjuntos, productos cartesianos, funciones y coordenadas.</p>
+</section>
+<section id="software-funciones-y-tipos" class="level2">
+<h2 class="anchored" data-anchor-id="software-funciones-y-tipos">5.2 Software: funciones y tipos</h2>
+<p>En programación, una función puede recibir un objeto de un tipo y devolver uno de otro.</p>
+<p>Por ejemplo, una función que recibe dos coordenadas reales y calcula su distancia al origen puede expresarse como</p>
+<p><span class="math display">\[
+d:\mathbb R^2\longrightarrow\mathbb R
+\]</span></p>
+<p>mediante</p>
+<p><span class="math display">\[
+d(x,y)=\sqrt{x^2+y^2}.
+\]</span></p>
+<p>La declaración del dominio y codominio ayuda a especificar formalmente el tipo de entradas y salidas esperadas.</p>
+</section>
+<section id="animación-transformación-de-objetos" class="level2">
+<h2 class="anchored" data-anchor-id="animación-transformación-de-objetos">5.3 Animación: transformación de objetos</h2>
+<p>Un objeto bidimensional puede representarse mediante un conjunto de puntos:</p>
+<p><span class="math display">\[
+P\subseteq\mathbb R^2.
+\]</span></p>
+<p>Si aplicamos una función</p>
+<p><span class="math display">\[
+T:\mathbb R^2\longrightarrow\mathbb R^2,
+\]</span></p>
+<p>el objeto transformado corresponde al conjunto</p>
+<p><span class="math display">\[
+T(P)=\{T(p)\mid p\in P\}.
+\]</span></p>
+<p>Esta notación permite describir transformaciones geométricas aplicadas a todos los puntos de una figura.</p>
+</section>
+</section>
+<section id="actividades" class="level1">
+<h1>6. Actividades</h1>
+<section id="actividad-1.-interpretación-de-conjuntos" class="level2">
+<h2 class="anchored" data-anchor-id="actividad-1.-interpretación-de-conjuntos">Actividad 1. Interpretación de conjuntos</h2>
+<p>Sean</p>
+<p><span class="math display">\[
+A=\{1,2,3,4\},\quad B=\{3,4,5,6\}.
+\]</span></p>
+<ol type="1">
+<li>Calcula <span class="math inline">\(A\cup B\)</span>.</li>
+<li>Calcula <span class="math inline">\(A\cap B\)</span>.</li>
+<li>Determina <span class="math inline">\(A\setminus B\)</span>.</li>
+<li>¿Es <span class="math inline">\(\{3,4\}\subseteq A\)</span>? Justifica.</li>
+</ol>
+</section>
+<section id="actividad-2.-relaciones-y-funciones" class="level2">
+<h2 class="anchored" data-anchor-id="actividad-2.-relaciones-y-funciones">Actividad 2. Relaciones y funciones</h2>
+<p>Considera las siguientes relaciones:</p>
+<p><span class="math display">\[
+R_1=\{(1,2),(2,4),(3,6)\}
+\]</span></p>
+<p><span class="math display">\[
+R_2=\{(1,2),(1,3),(2,4)\}.
+\]</span></p>
+<p>Determina cuál representa una función con dominio <span class="math inline">\(\{1,2,3\}\)</span> y explica tu respuesta utilizando las condiciones de existencia y unicidad.</p>
+</section>
+<section id="actividad-3.-lenguaje-formal" class="level2">
+<h2 class="anchored" data-anchor-id="actividad-3.-lenguaje-formal">Actividad 3. Lenguaje formal</h2>
+<p>Traduce al lenguaje matemático:</p>
+<ol type="1">
+<li>Todo número real es menor o igual que su cuadrado más uno.</li>
+<li>Existe un número entero cuyo cuadrado es nueve.</li>
+<li>Todos los elementos de <span class="math inline">\(A\)</span> pertenecen a <span class="math inline">\(B\)</span>.</li>
+<li>Existe exactamente un número real que satisface <span class="math inline">\(x+2=5\)</span>.</li>
+</ol>
+<p>Después determina cuáles afirmaciones son verdaderas.</p>
+</section>
+<section id="actividad-4.-transformaciones-geométricas" class="level2">
+<h2 class="anchored" data-anchor-id="actividad-4.-transformaciones-geométricas">Actividad 4. Transformaciones geométricas</h2>
+<p>Considera</p>
+<p><span class="math display">\[
+T(x,y)=(x+y,y).
+\]</span></p>
+<ol type="1">
+<li>Calcula <span class="math inline">\(T(1,2)\)</span>.</li>
+<li>Calcula <span class="math inline">\(T(0,0)\)</span>.</li>
+<li>Calcula <span class="math inline">\(T(2,-1)\)</span>.</li>
+<li>Describe geométricamente qué sucede con los puntos del plano.</li>
+<li>Investiga si esta transformación puede expresarse mediante una matriz.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Respuestas para autoevaluación
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Actividad 1</strong></p>
+<ol type="1">
+<li><span class="math inline">\(\{1,2,3,4,5,6\}\)</span></li>
+<li><span class="math inline">\(\{3,4\}\)</span></li>
+<li><span class="math inline">\(\{1,2\}\)</span></li>
+<li>Sí, porque ambos elementos pertenecen a <span class="math inline">\(A\)</span>.</li>
+</ol>
+<p><strong>Actividad 2</strong></p>
+<p><span class="math inline">\(R_1\)</span> sí representa una función con el dominio indicado.</p>
+<p><span class="math inline">\(R_2\)</span> no: el elemento 1 tiene dos imágenes y el elemento 3 no tiene ninguna.</p>
+<p><strong>Actividad 3</strong></p>
+<ol type="1">
+<li><span class="math inline">\(\forall x\in\mathbb R,\ x\leq x^2+1\)</span>. Verdadera.</li>
+<li><span class="math inline">\(\exists x\in\mathbb Z:\ x^2=9\)</span>. Verdadera.</li>
+<li><span class="math inline">\(\forall x\,(x\in A\Rightarrow x\in B)\)</span>. Su verdad depende de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>.</li>
+<li><span class="math inline">\(\exists!x\in\mathbb R:\ x+2=5\)</span>. Verdadera.</li>
+</ol>
+<p><strong>Actividad 4</strong></p>
+<ol type="1">
+<li><span class="math inline">\((3,2)\)</span></li>
+<li><span class="math inline">\((0,0)\)</span></li>
+<li><span class="math inline">\((1,-1)\)</span></li>
+</ol>
+<p>La transformación es un cizallamiento horizontal y puede representarse por</p>
+<p><span class="math display">\[
+A=
+\begin{pmatrix}
+1&amp;1\\
+0&amp;1
+\end{pmatrix}.
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="para-reflexionar" class="level1">
+<h1>7. Para reflexionar</h1>
+<p>Antes de continuar, responde con tus propias palabras:</p>
+<ol type="1">
+<li>¿Por qué una función es una relación, pero no toda relación es una función?</li>
+<li>¿Qué diferencia existe entre el codominio y la imagen de una función?</li>
+<li>¿Por qué es importante especificar a qué conjunto pertenece una variable?</li>
+<li>¿Qué aporta el lenguaje formal a la descripción de un sistema robótico o computacional?</li>
+<li>¿Qué ventajas y limitaciones encuentras al representar objetos geométricos mediante conjuntos y funciones?</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Conceptos que debes dominar
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Antes de avanzar a lógica y cuantificadores debes poder:</p>
+<ul>
+<li>Interpretar operaciones básicas entre conjuntos.</li>
+<li>Reconocer una relación como subconjunto de un producto cartesiano.</li>
+<li>Determinar si una relación representa una función.</li>
+<li>Distinguir dominio, codominio e imagen.</li>
+<li>Traducir afirmaciones sencillas entre lenguaje natural y lenguaje matemático.</li>
+</ul>
+</div>
+</div>
+<hr>
+<p><a href="../../cursos/algebra-lineal/index.html">← Volver a Álgebra Lineal</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/j2lyra\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
+  <div class="nav-page nav-page-previous">
+      <a href="../../cursos/algebra-lineal/index.html" class="pagination-link" aria-label="Presentación del curso">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Presentación del curso</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

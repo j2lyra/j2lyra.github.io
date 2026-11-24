@@ -1,0 +1,358 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
+    "section": "",
+    "text": "Matemáticas · Docencia · Neurociencias cognitivas\nSoy ingeniero en Nanotecnología por el Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO), con formación adicional en matemáticas. Actualmente imparto clases en el Centro Universitario de Chapala (CUChapala), de la Universidad de Guadalajara.\nMi trayectoria ha estado vinculada principalmente a la enseñanza de las matemáticas, la resolución de problemas y la formación de estudiantes.\nDesde hace más de diez años participo en la preparación de estudiantes para olimpiadas de matemáticas, desde competencias regionales y estatales hasta certámenes nacionales e internacionales, entre ellos la Olimpiada Mexicana de Matemáticas (OMM), Singapore International Math Olympiad Challenge (SIMOC), Vanda Science Competition, International Mathematics Competition (IMC) y European Girls’ Mathematical Olympiad (EGMO). También he colaborado en el diseño y selección de problemas, la organización de competencias y el desarrollo de programas de entrenamiento, particularmente en la Olimpiada de Matemáticas de la Ribera de Chapala y otras iniciativas educativas en Jalisco.\nMi experiencia como docente y entrenador me ha llevado a interesarme no solamente por cómo enseñar matemáticas, sino por qué significa comprenderlas y cómo se construye el conocimiento matemático. Me interesa entender qué sucede cuando una persona se enfrenta a un problema para el que no dispone de un procedimiento inmediato: cómo reconoce estructuras, recupera conocimientos previos, construye representaciones, formula conjeturas y desarrolla nuevas estrategias.\nEstas preguntas me han acercado a las neurociencias cognitivas, la epistemología y las perspectivas contemporáneas de la cognición matemática. Me interesa especialmente la relación entre los mecanismos cognitivos que hacen posible el pensamiento matemático y las prácticas mediante las cuales ese pensamiento se desarrolla, se comunica y adquiere significado."
+  },
+  {
+    "objectID": "index.html#investigación",
+    "href": "index.html#investigación",
+    "title": "Inicio",
+    "section": "Investigación",
+    "text": "Investigación\nMis intereses de investigación se sitúan en la intersección de las neurociencias cognitivas, la epistemología de las matemáticas y las ciencias del aprendizaje, con especial atención a los mecanismos y las prácticas que intervienen en la construcción, representación y movilización del conocimiento matemático.\n\nNeurociencias cognitivas y cognición matemática\nMe interesa estudiar los procesos neurocognitivos involucrados en la adquisición y utilización de conceptos matemáticos, particularmente la memoria de trabajo, la atención, las funciones ejecutivas, la metacognición, la abstracción y la formación de representaciones simbólicas.\nDesde esta perspectiva, considero relevante investigar cómo los mecanismos de procesamiento numérico y simbólico se articulan con procesos cognitivos de mayor complejidad, como el razonamiento deductivo, el reconocimiento de patrones, la generalización y la resolución de problemas no rutinarios.\nTambién me interesa la relación entre la experiencia de aprendizaje y la reorganización funcional de los sistemas cognitivos, así como las posibilidades y limitaciones de explicar el pensamiento matemático mediante mecanismos neurobiológicos.\n\n\nEpistemología y praxis matemática\nUna de mis inquietudes centrales es comprender qué significa saber matemáticas. Esta pregunta no se reduce al dominio de definiciones, algoritmos o procedimientos, sino que involucra la capacidad de establecer relaciones conceptuales, construir argumentos, reconocer condiciones de validez y generar nuevas formas de resolver problemas.\nDesde una perspectiva epistemológica, me interesa examinar cómo se constituye y justifica el conocimiento matemático, así como las relaciones entre la intuición, la formalización, la demostración y la experiencia.\nAsimismo, me interesa estudiar la praxis matemática como una actividad en la que el conocimiento se construye y transforma mediante la interacción entre razonamiento, acción, representaciones simbólicas, herramientas y prácticas sociales. Las olimpiadas de matemáticas representan un contexto especialmente interesante para observar estos procesos, pues los estudiantes deben interpretar situaciones desconocidas, construir estrategias, comunicar ideas y justificar soluciones.\n\n\nCognición 4E y construcción del conocimiento\nMe interesa explorar las perspectivas de la cognición 4E —corporizada, situada, enactiva y extendida— para comprender cómo la actividad matemática puede involucrar procesos que trascienden una concepción exclusivamente interna o cerebral de la cognición.\nEste enfoque permite investigar el papel del cuerpo, las experiencias sensorimotoras, las representaciones externas, los instrumentos y los entornos socioculturales en la construcción del pensamiento matemático.\nEn particular, me interesa analizar cómo ciertas experiencias, metáforas conceptuales y formas de interacción con objetos o representaciones pueden contribuir a la comprensión de conceptos abstractos, así como las relaciones entre estas experiencias y los procesos de formalización matemática.\n\n\nPrerrequisitos cognitivos y resolución de problemas\nUna línea de investigación que actualmente exploro consiste en identificar qué conocimientos, experiencias y recursos cognitivos son necesarios para comprender y resolver problemas matemáticos no rutinarios.\nEsta propuesta contempla la construcción de modelos de dependencia conceptual mediante grafos, donde los nodos representan conocimientos, conceptos, estrategias o recursos matemáticos, y las aristas describen relaciones de prerrequisito o dependencia entre ellos.\nEl objetivo es examinar cómo diferentes estructuras de conocimiento pueden dar lugar a distintas rutas de resolución, reconociendo que un mismo problema puede abordarse mediante estrategias conceptualmente diferentes.\nTambién me interesa explorar el uso de modelos de lenguaje de gran escala (LLM) como herramientas de apoyo para la identificación y organización de estas estructuras, mediante procedimientos de validación matemática y análisis cognitivo.\nDesde una perspectiva más amplia, esta línea busca contribuir al estudio de las relaciones entre conocimiento previo, comprensión conceptual, experiencia y resolución de problemas, con posibles aplicaciones en el diseño de experiencias de aprendizaje matemático."
+  },
+  {
+    "objectID": "index.html#cursos",
+    "href": "index.html#cursos",
+    "title": "Inicio",
+    "section": "Cursos",
+    "text": "Cursos\nEn esta sección comparto materiales didácticos, notas de clase, ejercicios y recursos relacionados con distintas áreas de las matemáticas. Los contenidos están orientados al desarrollo de la comprensión conceptual, la argumentación y las habilidades de resolución de problemas.\n\nPrecálculo\nFunciones, polinomios, expresiones algebraicas, funciones racionales y fundamentos matemáticos para el estudio del cálculo.\n\n\nÁlgebra Lineal\nSistemas de ecuaciones lineales, matrices, espacios vectoriales, transformaciones lineales y sus aplicaciones.\n\n\nEstadística Inferencial\nProbabilidad, distribuciones de muestreo, estimación de parámetros, intervalos de confianza y pruebas de hipótesis."
+  },
+  {
+    "objectID": "cursos/algebra-lineal/index.html",
+    "href": "cursos/algebra-lineal/index.html",
+    "title": "Álgebra Lineal",
+    "section": "",
+    "text": "← Volver a cursos",
+    "crumbs": [
+      "Inicio",
+      "Presentación del curso"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/index.html#presentación-del-curso",
+    "href": "cursos/algebra-lineal/index.html#presentación-del-curso",
+    "title": "Álgebra Lineal",
+    "section": "Presentación del curso",
+    "text": "Presentación del curso\nEl álgebra lineal constituye uno de los lenguajes fundamentales de las matemáticas y de sus aplicaciones en ciencias, ingeniería y computación. Sus conceptos permiten estudiar estructuras, representar relaciones y describir transformaciones que aparecen en una gran variedad de problemas.\nEste curso busca desarrollar una comprensión profunda de los conceptos del álgebra lineal mediante tres enfoques complementarios: formal, intuitivo y aplicado.\nTomaremos como referencia principal el libro Linear Algebra, de Kenneth Hoffman y Ray Kunze, especialmente por su tratamiento formal de los espacios vectoriales y las transformaciones lineales. Sin embargo, el curso no seguirá necesariamente el orden ni el nivel de abstracción del texto.\nSe dará especial importancia a la comprensión del lenguaje matemático: aprenderemos a interpretar definiciones, proposiciones y teoremas, identificando sus hipótesis, conclusiones y relaciones lógicas. Buscaremos que los estudiantes comprendan tanto el significado de los resultados como las condiciones bajo las cuales son válidos.\nAl mismo tiempo, desarrollaremos una intuición geométrica y computacional de los conceptos mediante visualizaciones, experimentos numéricos y ejemplos aplicados.\nAunque la demostración matemática es fundamental para comprender la estructura lógica de la disciplina, el curso no estará centrado en la elaboración de demostraciones formales extensas. Se incluirán demostraciones seleccionadas como material complementario, disponibles para quienes deseen profundizar en los fundamentos teóricos.\n\nObjetivos de aprendizaje\nAl finalizar el curso, se espera que los estudiantes puedan:\n\nInterpretar y utilizar correctamente el lenguaje formal del álgebra lineal.\nComprender las relaciones entre vectores, matrices, espacios vectoriales y transformaciones lineales.\nDesarrollar interpretaciones geométricas y computacionales de los principales conceptos.\nReconocer las hipótesis y conclusiones de definiciones y teoremas.\nAplicar herramientas del álgebra lineal a problemas de robótica, software y animación.\nUtilizar herramientas computacionales para explorar, verificar e interpretar resultados.\n\n\n\nContenido del curso\n\nUnidad 1. Lenguaje matemático y sistemas lineales\n\nConjuntos, funciones, relaciones y notación matemática.\nProposiciones, cuantificadores e implicaciones lógicas.\nDefiniciones, teoremas y estructura de una demostración.\nSistemas de ecuaciones lineales.\nMatrices y operaciones elementales.\nEliminación de Gauss y Gauss-Jordan.\n\nAplicación: sistemas de ecuaciones para modelar relaciones entre variables en programación, robótica y simulación.\n\n\nUnidad 2. Vectores y espacios vectoriales\n\nInterpretación geométrica y algebraica de los vectores.\nCombinaciones lineales y espacio generado.\nDefinición formal de espacio vectorial.\nSubespacios vectoriales.\nDependencia e independencia lineal.\nBases, coordenadas y dimensión.\n\nAplicación: representación de posiciones, velocidades y direcciones en sistemas robóticos y escenas tridimensionales.\n\n\nUnidad 3. Transformaciones lineales\n\nFunciones entre espacios vectoriales.\nDefinición de transformación lineal.\nNúcleo e imagen.\nRepresentación matricial.\nComposición de transformaciones.\nCambio de base.\n\nAplicación: transformaciones geométricas, sistemas de coordenadas, gráficos por computadora y animación.\n\n\nUnidad 4. Determinantes y sistemas lineales\n\nInterpretación algebraica y geométrica del determinante.\nPropiedades fundamentales.\nMatrices invertibles.\nRango y soluciones de sistemas lineales.\nInterpretación geométrica de la invertibilidad.\n\nAplicación: deformaciones geométricas, cambios de orientación y resolución de sistemas en software científico.\n\n\nUnidad 5. Valores y vectores propios\n\nValores y vectores propios.\nPolinomio característico.\nDiagonalización.\nInterpretación geométrica de los vectores propios.\nSistemas dinámicos discretos.\n\nAplicación: análisis de transformaciones, comportamiento de sistemas dinámicos y simulaciones computacionales.\n\n\nUnidad 6. Producto interno y ortogonalidad\n\nProducto interno y norma.\nÁngulos y proyecciones.\nOrtogonalidad.\nBases ortonormales.\nProceso de Gram-Schmidt.\nAproximación por mínimos cuadrados.\n\nAplicación: proyecciones geométricas, procesamiento de datos, orientación espacial y gráficos tridimensionales.\n\n\n\n\nMetodología\nCada tema se desarrollará a partir de cuatro componentes:\n1. Intuición y exploración. Introduciremos los conceptos mediante problemas, visualizaciones geométricas, experimentos o situaciones concretas.\n2. Formalización. Construiremos las definiciones y analizaremos sus propiedades utilizando lenguaje matemático preciso.\n3. Aplicación. Resolveremos problemas vinculados con programación, robótica, animación y otras áreas de la ingeniería.\n4. Profundización teórica. Se ofrecerán demostraciones y resultados complementarios para quienes deseen estudiar con mayor rigor la estructura matemática del tema.\n\n\nBibliografía principal\nHoffman, K., & Kunze, R. (1971). Linear Algebra (2.ª ed.). Prentice-Hall.\n\n\nRecursos\nLos materiales del curso incluirán notas teóricas, ejercicios, visualizaciones interactivas, ejemplos computacionales y demostraciones complementarias.",
+    "crumbs": [
+      "Inicio",
+      "Presentación del curso"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html",
+    "href": "cursos/algebra-lineal/01-lenguaje.html",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "",
+    "text": "Las matemáticas no consisten únicamente en realizar cálculos. También constituyen un lenguaje que permite describir objetos abstractos, establecer relaciones entre ellos y formular afirmaciones precisas.\nEn álgebra lineal encontraremos expresiones como\n\\[\nT:V\\longrightarrow W\n\\]\no\n\\[\n\\forall u,v\\in V,\\quad\nT(u+v)=T(u)+T(v).\n\\]\nAunque inicialmente puedan parecer complicadas, estas expresiones comunican ideas que pueden explicarse con palabras.\nNuestro primer objetivo será aprender a interpretar este lenguaje, comprender los objetos que representa y utilizarlo para describir situaciones matemáticas y computacionales.\n\n\n\n\n\n\nTipIdea central\n\n\n\nEl formalismo matemático no sustituye la intuición: permite expresar nuestras intuiciones de manera precisa, evitando ambigüedades.\nUna parte fundamental de aprender matemáticas consiste en poder pasar de una explicación intuitiva a una formulación rigurosa y viceversa.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#intuición",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#intuición",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "1.1 Intuición",
+    "text": "1.1 Intuición\nUn conjunto es una colección bien definida de objetos, llamados elementos.\nPor ejemplo, podemos considerar el conjunto de los ejes de un robot:\n\\[\nE=\\{x,y,z\\}.\n\\]\nTambién podemos considerar el conjunto de números naturales entre uno y cinco:\n\\[\nA=\\{1,2,3,4,5\\}.\n\\]\nLo importante es que podamos determinar si un objeto pertenece o no al conjunto.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#definición-y-notación",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#definición-y-notación",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "1.2 Definición y notación",
+    "text": "1.2 Definición y notación\nDos símbolos fundamentales son:\n\n\\(a\\in A\\): el elemento \\(a\\) pertenece al conjunto \\(A\\).\n\\(a\\notin A\\): el elemento \\(a\\) no pertenece al conjunto \\(A\\).\n\nPor ejemplo, si\n\\[\nA=\\{2,4,6,8\\},\n\\]\nentonces\n\\[\n4\\in A,\\qquad 5\\notin A.\n\\]\nEn un conjunto, el orden y las repeticiones no modifican sus elementos:\n\\[\n\\{1,2,3\\}=\\{3,2,1,1\\}.\n\\]",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#conjuntos-numéricos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#conjuntos-numéricos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "1.3 Conjuntos numéricos",
+    "text": "1.3 Conjuntos numéricos\nUtilizaremos frecuentemente los siguientes conjuntos:\n\n\n\nSímbolo\nConjunto\nEjemplos\n\n\n\n\n\\(\\mathbb N\\)\nNaturales\n\\(0,1,2,3,\\ldots\\)\n\n\n\\(\\mathbb Z\\)\nEnteros\n\\(-2,-1,0,1,2\\)\n\n\n\\(\\mathbb Q\\)\nRacionales\n\\(\\frac12,-\\frac34\\)\n\n\n\\(\\mathbb R\\)\nReales\n\\(\\sqrt2,\\pi,-5\\)\n\n\n\\(\\mathbb C\\)\nComplejos\n\\(2+3i\\)\n\n\n\nEn este curso adoptaremos la convención \\(0\\in\\mathbb N\\).\nEstos conjuntos permiten especificar qué valores pueden tomar las variables de un problema.\nPor ejemplo,\n\\[\nx\\in\\mathbb R\n\\]\nsignifica que \\(x\\) representa un número real.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#conjuntos-por-comprensión",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#conjuntos-por-comprensión",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "1.4 Conjuntos por comprensión",
+    "text": "1.4 Conjuntos por comprensión\nNo siempre es conveniente enumerar todos los elementos de un conjunto.\nPodemos describirlos mediante una propiedad:\n\\[\nA=\\{x\\in\\mathbb R\\mid x\\geq 0\\}.\n\\]\nSe lee:\n“A es el conjunto de los números reales x tales que x es mayor o igual que cero”.\nEl símbolo \\(\\mid\\) se interpreta como tal que.\n\nEjemplo: restricciones de velocidad\nSupongamos que un motor puede operar entre 0 y 120 revoluciones por minuto.\nEl conjunto de velocidades permitidas puede escribirse como\n\\[\nV=\\{v\\in\\mathbb R\\mid 0\\leq v\\leq120\\}.\n\\]\nEsta expresión permite comunicar de forma precisa las restricciones del sistema.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#subconjuntos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#subconjuntos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "1.5 Subconjuntos",
+    "text": "1.5 Subconjuntos\nDecimos que \\(A\\) es un subconjunto de \\(B\\), y escribimos\n\\[\nA\\subseteq B,\n\\]\nsi todos los elementos de \\(A\\) también pertenecen a \\(B\\).\nFormalmente,\n\\[\nA\\subseteq B\n\\iff\n\\forall x\\,(x\\in A\\Rightarrow x\\in B).\n\\]\nPor ejemplo,\n\\[\n\\{1,2\\}\\subseteq\\{1,2,3,4\\}.\n\\]\nObserva que esta definición utiliza símbolos lógicos que estudiaremos con mayor profundidad en la siguiente lección.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#operaciones-con-conjuntos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#operaciones-con-conjuntos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "1.6 Operaciones con conjuntos",
+    "text": "1.6 Operaciones con conjuntos\nSean\n\\[\nA=\\{1,2,3\\},\n\\qquad\nB=\\{3,4,5\\}.\n\\]\nUnión: elementos que pertenecen a alguno de los conjuntos.\n\\[\nA\\cup B=\\{1,2,3,4,5\\}.\n\\]\nIntersección: elementos que pertenecen a ambos conjuntos.\n\\[\nA\\cap B=\\{3\\}.\n\\]\nDiferencia: elementos de \\(A\\) que no pertenecen a \\(B\\).\n\\[\nA\\setminus B=\\{1,2\\}.\n\\]\nProducto cartesiano: conjunto de pares ordenados.\n\\[\nA\\times B\n=\n\\{(a,b)\\mid a\\in A,\\ b\\in B\\}.\n\\]\nEl producto cartesiano será especialmente importante para estudiar relaciones, funciones y coordenadas.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#qué-es-una-relación",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#qué-es-una-relación",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "2.1 ¿Qué es una relación?",
+    "text": "2.1 ¿Qué es una relación?\nUna relación permite establecer correspondencias entre elementos de dos conjuntos.\nConsideremos dos conjuntos:\n\\[\nA=\\{1,2,3\\},\n\\qquad\nB=\\{2,4,6\\}.\n\\]\nPodemos relacionar cada número de \\(A\\) con su doble en \\(B\\):\n\\[\nR=\\{(1,2),(2,4),(3,6)\\}.\n\\]\nEsta relación está formada por pares ordenados.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#definición-formal",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#definición-formal",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "2.2 Definición formal",
+    "text": "2.2 Definición formal\nSean \\(A\\) y \\(B\\) dos conjuntos.\nUna relación binaria de \\(A\\) en \\(B\\) es cualquier subconjunto del producto cartesiano:\n\\[\n\\boxed{R\\subseteq A\\times B}.\n\\]\nEs decir, una relación es un conjunto de pares ordenados cuyos primeros elementos pertenecen a \\(A\\) y cuyos segundos elementos pertenecen a \\(B\\).\n\nEjemplo: robot y sensores\nSupongamos que tenemos dos robots:\n\\[\nA=\\{R_1,R_2\\}\n\\]\ny tres sensores:\n\\[\nB=\\{S_1,S_2,S_3\\}.\n\\]\nLa relación\n\\[\nR=\\{(R_1,S_1),(R_1,S_2),(R_2,S_3)\\}\n\\]\npuede representar qué sensores utiliza cada robot.\nObserva que un mismo robot puede estar relacionado con varios sensores.\nEsta posibilidad será importante para distinguir una relación general de una función.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#de-las-relaciones-a-las-funciones",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#de-las-relaciones-a-las-funciones",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "3.1 De las relaciones a las funciones",
+    "text": "3.1 De las relaciones a las funciones\nUna función es un tipo particular de relación.\nLa idea fundamental es que cada elemento del dominio debe tener exactamente una imagen.\nPor ejemplo, consideremos una función que asigna a cada tiempo la posición de un robot.\nPara un mismo instante de tiempo, el modelo debe asignar una única posición.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#definición-formal-1",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#definición-formal-1",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "3.2 Definición formal",
+    "text": "3.2 Definición formal\nSean \\(A\\) y \\(B\\) dos conjuntos.\nUna función\n\\[\nf:A\\longrightarrow B\n\\]\nes una relación que satisface:\nExistencia: para todo elemento \\(a\\in A\\), existe un elemento \\(b\\in B\\) relacionado con él.\nUnicidad: ningún elemento \\(a\\in A\\) puede estar relacionado con dos valores distintos de \\(B\\).\nFormalmente,\n\\[\n\\forall a\\in A,\\ \\exists! b\\in B:\n(a,b)\\in f.\n\\]\nEl símbolo \\(\\exists!\\) significa existe un único.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#dominio-codominio-e-imagen",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#dominio-codominio-e-imagen",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "3.3 Dominio, codominio e imagen",
+    "text": "3.3 Dominio, codominio e imagen\nConsideremos\n\\[\nf:\\mathbb R\\longrightarrow\\mathbb R,\n\\qquad\nf(x)=x^2.\n\\]\n\nDominio: conjunto de valores de entrada; en este caso, \\(\\mathbb R\\).\nCodominio: conjunto declarado de posibles valores de salida; en este caso, \\(\\mathbb R\\).\nImagen: valores que realmente alcanza la función.\n\nPara este ejemplo,\n\\[\n\\operatorname{Im}(f)\n=\n\\{y\\in\\mathbb R\\mid y\\geq0\\}.\n\\]\nObserva que imagen y codominio no necesariamente son iguales.\nEsta distinción será fundamental cuando estudiemos transformaciones lineales.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#funciones-entre-espacios-de-coordenadas",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#funciones-entre-espacios-de-coordenadas",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "3.4 Funciones entre espacios de coordenadas",
+    "text": "3.4 Funciones entre espacios de coordenadas\nEn robótica y animación, una posición en el plano puede representarse mediante un par ordenado:\n\\[\n(x,y)\\in\\mathbb R^2.\n\\]\nUna transformación puede definirse mediante\n\\[\nT:\\mathbb R^2\\longrightarrow\\mathbb R^2\n\\]\ncon\n\\[\nT(x,y)=(2x,3y).\n\\]\nEsta función transforma cada posición del plano en una nueva posición, duplicando su coordenada horizontal y triplicando la vertical.\nPor ejemplo,\n\\[\nT(1,2)=(2,6).\n\\]\nEn álgebra lineal estudiaremos bajo qué condiciones estas transformaciones preservan las operaciones entre vectores.\n\n\n\n\n\n\nNoteConexión con Álgebra Lineal\n\n\n\nNo toda función entre espacios de coordenadas es una transformación lineal.\nPara que una función \\(T\\) sea lineal debe preservar la suma de vectores y la multiplicación por escalares.\nMás adelante estudiaremos estas condiciones formalmente.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#lectura-de-expresiones-matemáticas",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#lectura-de-expresiones-matemáticas",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "4.1 Lectura de expresiones matemáticas",
+    "text": "4.1 Lectura de expresiones matemáticas\nConsideremos la expresión\n\\[\n\\forall x\\in\\mathbb R,\\quad x^2\\geq0.\n\\]\nSe lee:\n“Para todo número real x, su cuadrado es mayor o igual que cero”.\nAhora consideremos\n\\[\n\\exists x\\in\\mathbb R:\\ x^2=4.\n\\]\nSe lee:\n“Existe un número real x cuyo cuadrado es igual a cuatro”.\nLa primera expresión afirma algo sobre todos los números reales; la segunda únicamente afirma la existencia de al menos uno.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#de-las-palabras-a-los-símbolos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#de-las-palabras-a-los-símbolos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "4.2 De las palabras a los símbolos",
+    "text": "4.2 De las palabras a los símbolos\nAfirmación:\n“Todo número real positivo tiene un cuadrado positivo”.\nPodemos escribir:\n\\[\n\\forall x\\in\\mathbb R,\\quad\nx&gt;0\\Rightarrow x^2&gt;0.\n\\]\nLa escritura formal permite identificar claramente las condiciones de una afirmación.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#robótica-espacio-de-configuraciones",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#robótica-espacio-de-configuraciones",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "5.1 Robótica: espacio de configuraciones",
+    "text": "5.1 Robótica: espacio de configuraciones\nConsideremos un brazo robótico con dos articulaciones rotatorias.\nPodemos representar su configuración mediante\n\\[\nq=(\\theta_1,\\theta_2).\n\\]\nSi ambas articulaciones admiten ángulos reales dentro de ciertos intervalos \\(I_1\\) e \\(I_2\\), entonces su espacio de configuraciones es\n\\[\nQ=I_1\\times I_2.\n\\]\nUna función de cinemática directa asocia a cada configuración una posición del extremo del brazo:\n\\[\nF:Q\\longrightarrow\\mathbb R^2.\n\\]\nEn esta formulación aparecen simultáneamente conjuntos, productos cartesianos, funciones y coordenadas.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#software-funciones-y-tipos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#software-funciones-y-tipos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "5.2 Software: funciones y tipos",
+    "text": "5.2 Software: funciones y tipos\nEn programación, una función puede recibir un objeto de un tipo y devolver uno de otro.\nPor ejemplo, una función que recibe dos coordenadas reales y calcula su distancia al origen puede expresarse como\n\\[\nd:\\mathbb R^2\\longrightarrow\\mathbb R\n\\]\nmediante\n\\[\nd(x,y)=\\sqrt{x^2+y^2}.\n\\]\nLa declaración del dominio y codominio ayuda a especificar formalmente el tipo de entradas y salidas esperadas.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#animación-transformación-de-objetos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#animación-transformación-de-objetos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "5.3 Animación: transformación de objetos",
+    "text": "5.3 Animación: transformación de objetos\nUn objeto bidimensional puede representarse mediante un conjunto de puntos:\n\\[\nP\\subseteq\\mathbb R^2.\n\\]\nSi aplicamos una función\n\\[\nT:\\mathbb R^2\\longrightarrow\\mathbb R^2,\n\\]\nel objeto transformado corresponde al conjunto\n\\[\nT(P)=\\{T(p)\\mid p\\in P\\}.\n\\]\nEsta notación permite describir transformaciones geométricas aplicadas a todos los puntos de una figura.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#actividad-1.-interpretación-de-conjuntos",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#actividad-1.-interpretación-de-conjuntos",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "Actividad 1. Interpretación de conjuntos",
+    "text": "Actividad 1. Interpretación de conjuntos\nSean\n\\[\nA=\\{1,2,3,4\\},\\quad B=\\{3,4,5,6\\}.\n\\]\n\nCalcula \\(A\\cup B\\).\nCalcula \\(A\\cap B\\).\nDetermina \\(A\\setminus B\\).\n¿Es \\(\\{3,4\\}\\subseteq A\\)? Justifica.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#actividad-2.-relaciones-y-funciones",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#actividad-2.-relaciones-y-funciones",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "Actividad 2. Relaciones y funciones",
+    "text": "Actividad 2. Relaciones y funciones\nConsidera las siguientes relaciones:\n\\[\nR_1=\\{(1,2),(2,4),(3,6)\\}\n\\]\n\\[\nR_2=\\{(1,2),(1,3),(2,4)\\}.\n\\]\nDetermina cuál representa una función con dominio \\(\\{1,2,3\\}\\) y explica tu respuesta utilizando las condiciones de existencia y unicidad.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#actividad-3.-lenguaje-formal",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#actividad-3.-lenguaje-formal",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "Actividad 3. Lenguaje formal",
+    "text": "Actividad 3. Lenguaje formal\nTraduce al lenguaje matemático:\n\nTodo número real es menor o igual que su cuadrado más uno.\nExiste un número entero cuyo cuadrado es nueve.\nTodos los elementos de \\(A\\) pertenecen a \\(B\\).\nExiste exactamente un número real que satisface \\(x+2=5\\).\n\nDespués determina cuáles afirmaciones son verdaderas.",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos/algebra-lineal/01-lenguaje.html#actividad-4.-transformaciones-geométricas",
+    "href": "cursos/algebra-lineal/01-lenguaje.html#actividad-4.-transformaciones-geométricas",
+    "title": "1.1 Conjuntos, relaciones, funciones y notación",
+    "section": "Actividad 4. Transformaciones geométricas",
+    "text": "Actividad 4. Transformaciones geométricas\nConsidera\n\\[\nT(x,y)=(x+y,y).\n\\]\n\nCalcula \\(T(1,2)\\).\nCalcula \\(T(0,0)\\).\nCalcula \\(T(2,-1)\\).\nDescribe geométricamente qué sucede con los puntos del plano.\nInvestiga si esta transformación puede expresarse mediante una matriz.\n\n\n\n\n\n\n\nTipRespuestas para autoevaluación\n\n\n\n\n\nActividad 1\n\n\\(\\{1,2,3,4,5,6\\}\\)\n\\(\\{3,4\\}\\)\n\\(\\{1,2\\}\\)\nSí, porque ambos elementos pertenecen a \\(A\\).\n\nActividad 2\n\\(R_1\\) sí representa una función con el dominio indicado.\n\\(R_2\\) no: el elemento 1 tiene dos imágenes y el elemento 3 no tiene ninguna.\nActividad 3\n\n\\(\\forall x\\in\\mathbb R,\\ x\\leq x^2+1\\). Verdadera.\n\\(\\exists x\\in\\mathbb Z:\\ x^2=9\\). Verdadera.\n\\(\\forall x\\,(x\\in A\\Rightarrow x\\in B)\\). Su verdad depende de \\(A\\) y \\(B\\).\n\\(\\exists!x\\in\\mathbb R:\\ x+2=5\\). Verdadera.\n\nActividad 4\n\n\\((3,2)\\)\n\\((0,0)\\)\n\\((1,-1)\\)\n\nLa transformación es un cizallamiento horizontal y puede representarse por\n\\[\nA=\n\\begin{pmatrix}\n1&1\\\\\n0&1\n\\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1. Fundamentos matemáticos",
+      "1.1 Conjuntos, relaciones y funciones"
+    ]
+  },
+  {
+    "objectID": "cursos.html",
+    "href": "cursos.html",
+    "title": "Cursos",
+    "section": "",
+    "text": "En esta sección comparto materiales educativos, notas de clase, ejercicios y recursos para el aprendizaje de las matemáticas. Los cursos combinan el desarrollo de la comprensión conceptual, el lenguaje matemático formal y la resolución de problemas."
+  },
+  {
+    "objectID": "cursos.html#precálculo",
+    "href": "cursos.html#precálculo",
+    "title": "Cursos",
+    "section": "Precálculo",
+    "text": "Precálculo\nEstudio de funciones, polinomios, gráficas y herramientas algebraicas que fundamentan el cálculo. Se busca desarrollar una comprensión de las relaciones entre distintas representaciones matemáticas y su aplicación a la resolución de problemas.\n##Ver curso de Precálculo →"
+  },
+  {
+    "objectID": "cursos.html#álgebra-lineal",
+    "href": "cursos.html#álgebra-lineal",
+    "title": "Cursos",
+    "section": "Álgebra Lineal",
+    "text": "Álgebra Lineal\nIntroducción formal, intuitiva y aplicada al álgebra lineal, tomando como referencia el texto de Hoffman y Kunze. El curso enfatiza la comprensión del lenguaje matemático, la interpretación geométrica de los conceptos y sus aplicaciones en robótica, desarrollo de software y animación. Las demostraciones se ofrecen como material de profundización.\nVer curso de Álgebra Lineal"
+  },
+  {
+    "objectID": "cursos.html#estadística-inferencial",
+    "href": "cursos.html#estadística-inferencial",
+    "title": "Cursos",
+    "section": "Estadística Inferencial",
+    "text": "Estadística Inferencial\nIntroducción al razonamiento estadístico, la probabilidad, la estimación de parámetros y las pruebas de hipótesis. Se busca desarrollar la capacidad de analizar datos, interpretar resultados y aplicar herramientas estadísticas en diferentes contextos.\n##Ver curso de Estadística Inferencial →"
+  },
+  {
+    "objectID": "investigacion.html",
+    "href": "investigacion.html",
+    "title": "Investigación",
+    "section": "",
+    "text": "Neurociencias cognitivas, cognición matemática, epistemología y praxis matemática."
+  },
+  {
+    "objectID": "investigacion.html#líneas-de-investigación",
+    "href": "investigacion.html#líneas-de-investigación",
+    "title": "Investigación",
+    "section": "",
+    "text": "Neurociencias cognitivas, cognición matemática, epistemología y praxis matemática."
+  }
+]
